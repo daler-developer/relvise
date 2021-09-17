@@ -1,9 +1,8 @@
 .header {
   & {
-  
+    @include b;
   }
   &__body {
-    @include b;
     height: 105px;
     display: flex;
     align-items: center;
@@ -22,5 +21,9 @@
   }
   &__nav-link {
     @include gap-h(21px);
+    font-weight: 600;
+    font-size: 14px;
+    letter-spacing: .2px;
+    color: $color-grey;
   }
 }
