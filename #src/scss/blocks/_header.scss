@@ -1,5 +1,26 @@
 .header {
   & {
-
+  
+  }
+  &__body {
+    @include b;
+    height: 105px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  &__logo {
+    font-weight: 700;
+    font-size: 24px;
+    letter-spacing: 0.1px;
+  }
+  &__nav {
+    margin: 0 0 0 135px
+  }
+  &__nav-list {
+    display: flex;
+  }
+  &__nav-link {
+    @include gap-h(21px);
   }
 }
