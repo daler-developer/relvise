@@ -32,11 +32,17 @@ const images = (cb) => {
     .pipe(dest('./build/images/'))
 }
 
+const fonts = (cb) => {
+  return src('./#src/fonts/**/*')
+    .pipe(dest('./build/fonts/'))
+}
+
 const watchAll = (cb) => {
   watch('./#src/**/*.html', html)
   watch('./#src/**/*.scss', scss)
-  watch('./#src/**/*.js', js)
-  watch('./#src/images/', images)
+  // watch('./#src/**/*.js', js)
+  // watch('./#src/images/', images)
+  // watch('./#src/fonts/**/*', fonts)
 }
 
-exports.default = series(html, scss, js, images, watchAll)
+exports.default = series(html, scss, js, images, fonts, watchAll)

@@ -1,9 +1,10 @@
 .intro {
   & {
-    @include b;
+    background-color: transparent;
   }
   &__body {
-    padding: 80px 0 100px 0;
+    padding: 80px 0 191px 0;
+    position: relative;
   }
   &__title {
     max-width: 509px;
@@ -46,5 +47,44 @@
       background-color: $color-green;
       color: $color-white-1;
     }
+  }
+  &__cards {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 110px);
+    display: grid;
+    grid-template-columns: 328px 328px 328px;
+    grid-template-rows: auto;
+    grid-column-gap: 30px;
+  }
+  &__card {
+    background-color: $color-white-1;
+    padding: 35px 40px;
+
+    &--active {
+      background-color: $color-green;
+
+      .intro__card-title, .intro__card-about, .intro__card-icon {
+        color: $color-white-1;
+      }
+    }
+  }
+  &__card-icon {
+    font-size: 48px;
+    color: $color-green;
+  }
+  &__card-title {
+    margin: 10px 0 0 0;
+    line-height: 32px;
+    letter-spacing: .1px;
+  }
+  &__card-about {
+    margin: 10px 0 0 0;
+    line-height: 20px;
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: .2px;
+    color: $color-grey;
   }
 }
