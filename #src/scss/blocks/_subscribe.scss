@@ -1,0 +1,55 @@
+.subscribe {
+  & {
+
+  }
+  &__body {
+
+  }
+  &__bottom {
+    background-color: $color-black-1;
+    color: $color-white-1;
+  }
+  &__brands-list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &__brands-body {
+    padding: 50px 0 160px;
+  }
+  &__bottom-body {
+    height: 77px;
+    position: relative;
+    padding: 0 32px;
+  }
+  &__subscribe-panel {
+    padding: 45px;
+    height: 124px;
+    transform: translateY(-50%);
+    background-color: $color-black-2;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &__title {
+    max-width: 266px;
+  }
+  &__input-panel {
+    width: 50%;
+    height: 58px;
+    border-radius: 5px;
+    overflow: hidden;
+    display: flex;
+    align-items: stretch;
+  }
+  &__input {
+    background-color: $color-white-1;
+    flex-grow: 1;
+    text-indent: 20px;
+  }
+  &__submit-btn {
+    width: 117px;
+    background-color: $color-orange;
+    color: $color-white-1;
+  }
+}

@@ -2,4 +2,104 @@
   & {
 
   }
+  &__body {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+  }
+  &__top, &__bottom {
+    background-color: $color-white-1;
+  }
+  &__center {
+    background-color: $color-black-2;
+    color: $color-white-1;
+  }
+  &__top-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 142px;
+  }
+  &__intro {
+    display: flex;
+    flex-direction: column;
+  }
+  &__top-title {
+
+  }
+  &__top-desc {
+    color: $color-grey;
+  }
+  &__contact-btn {
+    width: 160px;
+    height: 58px;
+    background-color: $color-orange;
+    color: $color-white-1;
+    border-radius: 5px;
+    font-weight: 700;
+  }
+  &__center-container {
+    padding: 50px 0 50px 0;
+    display: flex;
+    justify-content: space-between;
+  }
+  &__col {
+    display: flex;
+    flex-direction: column;
+  }
+  &__col-title {
+
+  }
+  &__links {
+    margin: 20px 0 0 0;
+    display: flex;
+    flex-direction: column;
+  }
+  &__link {
+    @include gap-v(10px);
+  }
+  &__bottom-container {
+    height: 74px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &__bottom-desc {
+    color: $color-grey;
+    font-weight: 600;
+  }
+  &__social-icons {
+    display: flex;
+    align-items: center;
+  }
+  &__social-icon {
+    @include gap-h(20px);
+    font-size: 24px;
+    cursor: pointer;
+
+    &.icon-facebook {
+      color: $color-blue;
+    }
+    &.icon-instagram {
+      color: $color-red;
+    }
+    &.icon-twitter {
+      color: $color-light-blue-2;
+    }
+    &.icon-youtube {
+      color: $color-red;
+    }
+  }
+  &__icon-link {
+    display: flex;
+    align-items: center;
+  }
+  &__col-icon {
+    @include center;
+    margin: 0 10px 0 0;
+    font-size: 24px;
+    width: 24px;
+    height: 24px;
+    color: $color-light-blue-1;
+  }
 }

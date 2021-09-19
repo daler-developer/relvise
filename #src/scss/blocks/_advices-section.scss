@@ -1,6 +1,6 @@
 .advices-section {
   & {
-    padding: 300px 0 0 0;
+    padding: 125px 0 81px 0;
   }
   &__body {
     display: flex;
@@ -24,7 +24,7 @@
     margin: 45px 0 0 0;
     display: grid;
     align-self: stretch;
-    grid-template-columns: repeat(4, 25%);
+    grid-template-columns: repeat(4, 1fr);
     grid-template-rows: auto;
     grid-column-gap: 32px;
   }

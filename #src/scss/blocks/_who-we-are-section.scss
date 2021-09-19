@@ -1,6 +1,97 @@
 .who-we-are-section {
   & {
     background-color: $color-white-1;
-    padding: 50px 0;
+    padding: 100px 0 136px 0;
+  }
+  &__body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  &__title {
+    line-height: 57px;
+    letter-spacing: .2px;
+  }
+  &__desc {
+    text-align: center;
+    margin: 15px 0 0 0;
+    max-width: 511px;
+    color: $color-grey;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: .2px;
+    font-weight: 500;
+  }
+  &__main {
+    margin: 100px 0 0 0;
+    display: flex;
+    justify-content: space-between;
+    align-self: stretch;
+  }
+  &__img-container {
+    width: 600px;
+    height: 442px;
+    position: relative;
+  }
+  &__img {
+    display: block;
+  }
+  &__play-btn {
+    @include center;
+    width: 98px;
+    height: 98px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    background-color: $color-green;
+    z-index: 999;
+
+    &::before {
+      content: url(./images/play-icon.png);
+      width: 24px;
+      height: 28px;
+    }
+  }
+  &__content {
+    max-width: 333px;
+    padding: 20px 0 0 0;
+  }
+  &__sub-title {
+    line-height: 57px;
+    letter-spacing: .2px;
+  }
+  &__about {
+    margin: 10px 0 0 0;
+    color: $color-grey;
+    line-height: 20px;
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: .2px;
+  }
+  &__list {
+    margin: 30px 0 0 0;
+  }
+  &__list-item {
+    @include gap-v(30px);
+    display: flex;
+    align-self: flex-start;
+  }
+  &__list-item-content {
+    margin: 0 0 0 20px;
+    display: flex;
+    flex-direction: column;
+  }
+  &__list-item-icon {
+    font-size: 29px;
+    color: $color-orange;
+  }
+  &__list-item-title {
+    line-height: 24px;
+  }
+  &__list-item-desc {
+    margin: 5px 0 0 0;
+    color: $color-grey;
   }
 }
