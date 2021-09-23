@@ -1,5 +1,6 @@
 $color-white-1: rgb(255, 255, 255);
 $color-grey: rgba(115, 115, 115, 1);
+$color-black-02: rgba(0, 0, 0, 0.2);
 $color-black-1: rgba(37, 43, 66, 1);
 $color-green: rgba(13, 92, 99, 1);
 $color-orange: rgba(255, 123, 71, 1);
@@ -15,4 +16,5 @@ $color-red: rgba(229, 31, 90, 1);
 $color-white-5: rgba(243, 243, 243, 1);
 $color-white-6: rgba(249, 249, 249, 1);
 
-$bp-modile: 768px;
+$bp-mobile: 500px;
+$bp-tablet: 768px;

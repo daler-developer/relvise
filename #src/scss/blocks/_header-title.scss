@@ -1,0 +1,14 @@
+.header-title {
+  & {
+    border: 1px solid #000;
+    text-align: center;
+  }
+  &__title {
+    margin: 0 auto;
+  }
+  &__sub-title {
+    margin-top: 10px;
+    color: $color-grey;
+    margin: 0 auto;
+  }
+}

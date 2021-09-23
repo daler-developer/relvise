@@ -6,20 +6,24 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Template</title>
   <link rel="stylesheet" href="index.css">
-  <script src="index.js"></script>
+  <script src="index.js" defer></script>
+  <script
+    src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+    crossorigin="anonymous"></script>
 </head>
 <body>
-  <div class="bg-wrapper">
-    @@include('./html/_header.html')
-    @@include('./html/_intro.html')
-  </div>
+  @@include('./html/_header.html')
+  @@include('./html/_slide-menu.html')
   <main>
+    @@include('./html/_intro.html')
+    @@include('./html/_services.html')
     @@include('./html/_about-section.html')
     @@include('./html/_advices-section.html')
-    @@include('./html/_who-we-are-section.html')
-    @@include('./html/_subscribe.html')
-    @@include('./html/_get-in-touch-section.html')
+    <!-- @@include('./html/_who-we-are-section.html') -->
+    <!-- @@include('./html/_subscribe.html') -->
+    <!-- @@include('./html/_get-in-touch-section.html') -->
   </main>
-  @@include('./html/_footer.html')
+  <!-- @@include('./html/_footer.html') -->
 </body>
 </html>

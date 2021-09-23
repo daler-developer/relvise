@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'Iconfont';
-  src:  url('./fonts/iconfont/fonts/Iconfont.eot?261bws');
-  src:  url('./fonts/iconfont/fonts/Iconfont.eot?261bws#iefix') format('embedded-opentype'),
-    url('./fonts/iconfont/fonts/Iconfont.ttf?261bws') format('truetype'),
-    url('./fonts/iconfont/fonts/Iconfont.woff?261bws') format('woff'),
-    url('./fonts/iconfont/fonts/Iconfont.svg?261bws#Iconfont') format('svg');
+  src:  url('fonts/icon-font/Iconfont.eot?lfxhcs');
+  src:  url('fonts/icon-font/IIconfont.eot?lfxhcs#iefix') format('embedded-opentype'),
+    url('fonts/icon-font/Iconfont.ttf?lfxhcs') format('truetype'),
+    url('fonts/icon-font/Iconfont.woff?lfxhcs') format('woff'),
+    url('fonts/icon-font/Iconfont.svg?lfxhcs#Iconfont') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -24,6 +24,9 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-menu:before {
+  content: "\e9bd";
+}
 .icon-youtube:before {
   content: "\e900";
 }

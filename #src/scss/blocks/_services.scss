@@ -1,0 +1,70 @@
+.services {
+  & {
+    margin: -111px 0 0 0;
+    position: relative;
+    z-index: 100;
+    border: 1px solid #000;
+  }
+  &__body {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-column-gap: 30px;
+  }
+  &__service {
+    background-color: $color-white-1;
+    padding: 35px 40px;
+
+    &--active {
+      background-color: $color-green;
+
+      & .services {
+        &__service-title, &__service-about, &__service-icon {
+          color: $color-white-1;
+        }
+      }
+    }
+  }
+  &__service-title {
+    margin: 10px 0 0 0;
+    line-height: 32px;
+    letter-spacing: .1px;
+  }
+  &__service-icon {
+    font-size: 48px;
+    color: $color-green;
+  }
+  &__service-about {
+    margin: 10px 0 0 0;
+    line-height: 20px;
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: .2px;
+    color: $color-grey;
+  }
+}
+
+@media screen and (max-width: $bp-tablet) {
+  .services {
+    &__body {
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+      grid-gap: 10px;
+    }
+    &__service:last-child {
+      grid-column: 1 / span 2;
+    }
+  }
+}
+
+@media screen and (max-width: $bp-mobile) {
+  .services {
+    &__body {
+      grid-template-columns: 1fr;
+      grid-template-rows: repeat(3, 1fr);
+    }
+    &__service:last-child {
+      grid-column: 1 / span 1;
+    }
+  }
+}

@@ -40,7 +40,7 @@ const fonts = (cb) => {
 const watchAll = (cb) => {
   watch('./#src/**/*.html', html)
   watch('./#src/**/*.scss', scss)
-  // watch('./#src/**/*.js', js)
+  watch('./#src/**/*.js', js)
   // watch('./#src/images/', images)
   // watch('./#src/fonts/**/*', fonts)
 }

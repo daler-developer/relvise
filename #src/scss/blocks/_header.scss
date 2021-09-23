@@ -1,6 +1,10 @@
 .header {
   & {
-
+    z-index: 1000;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
   }
   &__body {
     height: 105px;
@@ -25,5 +29,29 @@
     font-size: 14px;
     letter-spacing: .2px;
     color: $color-grey;
+  }
+  &__slide-menu-btn {
+    display: none;
+  }
+  &__slide-menu-icon {
+    font-size: 24px;
+  }
+}
+
+@media all and (max-width: $bp-mobile) {
+  .header {
+    &__logo {
+      font-size: 20px;
+    }
+    &__body {
+      height: 40px;
+      justify-content: space-between;
+    }
+    &__nav {
+      display: none;
+    }
+    &__slide-menu-btn {
+      display: block;
+    }
   }
 }

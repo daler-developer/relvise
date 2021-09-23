@@ -1,10 +1,24 @@
 .intro {
   & {
     background-color: transparent;
+    position: relative;
+  }
+  &__bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    object-fit: cover;
+    object-position: center;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
   }
   &__body {
-    padding: 80px 0 191px 0;
+    padding: 160px 0 190px 0;
     position: relative;
+    z-index: 2;
   }
   &__title {
     max-width: 509px;
@@ -49,10 +63,6 @@
     }
   }
   &__cards {
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    transform: translate(-50%, 110px);
     display: grid;
     grid-template-columns: 328px 328px 328px;
     grid-template-rows: auto;
@@ -86,5 +96,34 @@
     font-size: 14px;
     letter-spacing: .2px;
     color: $color-grey;
+  }
+}
+
+@media screen and (max-width: $bp-mobile) {
+  .intro {
+    &__bg {
+      object-position: right;
+      opacity: .5;
+    }
+    &__body {
+
+    }
+    &__title {
+      font-size: 33px;
+      line-height: 1em;
+    }
+    &__about {
+      margin: 25px 0 0 0;
+      line-height: 1em;
+    }
+    &__btns {
+      margin: 25px 0 0 0;
+      flex-wrap: wrap;
+    }
+    &__btn {
+      @include gap-v(10px);
+      margin-left: 0 !important;
+      width: 100%;
+    }
   }
 }
