@@ -13,9 +13,13 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    flex-wrap: wrap;
   }
   &__brands-body {
     padding: 50px 0 160px;
+  }
+  &__brand {
+    @include center;
   }
   &__bottom-body {
     height: 77px;
@@ -51,5 +55,23 @@
     width: 117px;
     background-color: $color-orange;
     color: $color-white-1;
+  }
+}
+
+@media screen and (max-width: $bp-tablet) {
+  .subscribe {
+    & {
+
+    }
+    &__brands-list {
+
+    }
+    &__brand {
+      width: 33.3333%;
+      padding: 10px;
+    }
+    &__bottom {
+      margin: 20px 0 0 0;
+    }
   }
 }
