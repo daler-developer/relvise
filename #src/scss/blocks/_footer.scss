@@ -18,7 +18,8 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    height: 142px;
+    padding-top: 40px;
+    padding-bottom: 40px;
   }
   &__intro {
     display: flex;
@@ -39,7 +40,7 @@
     font-weight: 700;
   }
   &__center-container {
-    padding: 50px 0 50px 0;
+    padding: 50px 15px;
     display: flex;
     justify-content: space-between;
   }
@@ -59,7 +60,7 @@
     @include gap-v(10px);
   }
   &__bottom-container {
-    height: 74px;
+    padding: 25px 15px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -67,6 +68,7 @@
   &__bottom-desc {
     color: $color-grey;
     font-weight: 600;
+    text-align: center;
   }
   &__social-icons {
     display: flex;
@@ -101,5 +103,44 @@
     width: 24px;
     height: 24px;
     color: $color-light-blue-1;
+  }
+}
+
+@media all and (max-width: $bp-tablet) {
+  .footer {
+    &__top-container {
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 20px 15px;
+    }
+    &__contact-btn {
+      margin-top: 10px;
+      height: 35px;
+    }
+    &__center-container {
+      flex-direction: column;
+    }
+    &__col {
+      @include gap-v(50px);
+    }
+    &__bottom-container {
+      padding: 15px;
+      flex-direction: column;
+      justify-content: center;
+    }
+    &__social-icons {
+      margin-top: 10px;
+    }
+  }
+}
+
+@media all and (max-width: $bp-mobile) {
+  .footer {
+    &__top-container {
+    }
+    &__contact-btn {
+      margin-top: 25px;
+      width: 100%;
+    }
   }
 }

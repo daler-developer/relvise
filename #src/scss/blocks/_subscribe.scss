@@ -1,10 +1,4 @@
 .subscribe {
-  & {
-
-  }
-  &__body {
-
-  }
   &__bottom {
     background-color: $color-black-1;
     color: $color-white-1;
@@ -24,16 +18,18 @@
   &__bottom-body {
     height: 77px;
     position: relative;
-    padding: 0 32px;
   }
   &__subscribe-panel {
-    padding: 45px;
-    height: 124px;
-    transform: translateY(-50%);
+    padding: 30px 40px;
     background-color: $color-black-2;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    flex-wrap: wrap;
+    position: absolute;
+    bottom: 20px;
+    left: 32px;
+    right: 32px;
   }
   &__title {
     max-width: 266px;
@@ -70,8 +66,49 @@
       width: 33.3333%;
       padding: 10px;
     }
+    &__brands-body {
+      // padding-bottom: 60px;
+    }
     &__bottom {
       margin: 20px 0 0 0;
+    }
+    &__title {
+      max-width: none;
+      text-align: center;
+    }
+    &__subscribe-panel {
+      padding: 20px 30px;
+
+      & > * {
+        width: 100%;
+      }
+    }
+    &__input-panel {
+      margin-top: 20px;
+      height: 40px;
+    }
+  }
+}
+
+@media screen and (max-width: $bp-mobile) {
+  .subscribe {
+    & {
+
+    }
+    &__brands-body {
+      padding-bottom: 80px;
+    }
+    &__subscribe-panel {
+      left: 0;
+      right: 0;
+      padding: 15px 20px;
+    }
+    &__title {
+      font-size: 18px;
+      line-height: 1em;
+    }
+    &__input-panel {
+      border-radius: 3px;
     }
   }
 }

@@ -10,12 +10,12 @@
 
 @mixin gap-h($size: 10px) {
   &:not(:nth-child(1)) {
-    margin: 0 0 0 $size;
+    margin-left: $size;
   }
 }
 
 @mixin gap-v($size: 10px) {
   &:not(:nth-child(1)) {
-    margin: $size 0 0 0;
+    margin-top: $size;
   }
 }

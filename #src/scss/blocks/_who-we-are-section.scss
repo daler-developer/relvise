@@ -2,7 +2,6 @@
   & {
     background-color: $color-white-1;
     padding: 100px 0 136px 0;
-    border: 1px solid #000;
   }
   &__body {
     margin: 100px 0 0 0;
@@ -11,10 +10,8 @@
   }
   &__img-container {
     width: 600px;
-    // height: 442px;
     position: relative;
     flex-shrink: 0;
-    border: 1px solid rgb(0, 20, 196);
     aspect-ratio: 16 / 9;
   }
   &__content {
@@ -84,7 +81,11 @@
 
 @media screen and (max-width: $bp-tablet) {
   .who-we-are-section {
+    & {
+      padding: 50px 0;
+    }
     &__body {
+      margin-top: 40px;
       flex-wrap: wrap;
     }
     &__img-container {
