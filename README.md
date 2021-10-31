@@ -5,7 +5,7 @@ Welcome to Relvise langing page!
 ## Demo:
 
 ![This is an image](/preview.jpg)  
-Link: https://daler-developer.github.io/apple-store/
+Link: https://daler-developer.github.io/relvise/
 
 ## Teck Stack:
 
